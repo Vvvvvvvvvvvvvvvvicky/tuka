@@ -1,16 +1,13 @@
 {
-  "pages":[
-    "pages/index/index",
-    "source/shareOne/shareOne",
-    "source/shareTwo/shareTwo"
+  "pages": [
+    "pages/about/about",
+    "pages/daily/daily"
+    
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "TUKA",
-    "navigationBarTextStyle":"black"
-  },
-  "usingComponents": {
-    "cpt": "/components/cpt"
+    "navigationBarTextStyle": "black"
   }
 }

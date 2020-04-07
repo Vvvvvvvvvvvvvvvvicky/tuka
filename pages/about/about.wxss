@@ -1,0 +1,22 @@
+/**弹性盒子布局**/
+.container{
+  background-color: #fff;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/** 小程序专用度量单位，相对值，最大是750rpx，2rpx=1px**/
+.about-banner{
+  width: 375rpx;
+  height: 375rpx;
+  border-radius: 50%;
+}
+
+.about-title{
+  font-weight: bold;
+  font-size: 50rpx;
+}

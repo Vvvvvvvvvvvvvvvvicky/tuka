@@ -1,0 +1,6 @@
+<view class="container">
+  <image src="https://wxt.sinaimg.cn/mw1024/c14e1802gy1gcfuj74sjgj20qo16jatb.jpg?tags=%5B%5D" class="about-banner"></image>
+  <text class="about-title">搭配日推</text>
+  <navigator url="/pages/daily/daily">每天推荐一个搭配</navigator>
+  <text>TUKA</text>
+</view>
