@@ -5,7 +5,7 @@
 
   display:grid;
   justify-content: space-around;
-  
+  align-items: center;
 }
 
 /** 小程序专用度量单位，相对值，最大是750rpx，2rpx=1px**/
@@ -18,17 +18,42 @@
 .daily-title{
   font-weight: bold;
   font-size: 50rpx;
-  margin-block-start: 60rpx;
+  margin-block-start: 40rpx;
   text-align: center;
 }
 
 .recommend{
   width: 600rpx;
-  height: 600rpx;
   margin-block-start: 40rpx;
 }
 
 .daily-bottom{
   text-align: center;
-  margin-block-end: 60rpx;
+  margin-block-start: 50rpx;
 }
+
+.details{
+  display: flex;
+  flex-direction: column;
+  width: 600rpx;
+  margin-block-start: 40rpx;
+}
+
+.detail-image{
+  width: 250rpx;
+  height: 250rpx;
+  align-self: center;
+}
+
+.detail-desc{
+  width: 300rpx;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.detail-swiper{
+  margin-block-start: 50rpx;
+  height: 600rpx;
+}
+

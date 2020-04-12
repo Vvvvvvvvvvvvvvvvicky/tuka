@@ -1,6 +1,17 @@
 <view class="container">
-  <image src="http://image.xingpin.com/img/pximg/201912/20/3/7a2721576826601.jpg" class="daily-banner"></image>
+  <image src="{{dailyRecommend.url}}" class="daily-banner"></image>
   <text class="daily-title">推荐理由</text>
-  <text class="recommend">浪漫的跨年时刻即将到来，你准备怎么过？时尚达人黄灿灿为你揭晓COACH心动单品，飘逸的印花长裙让她散发出俏丽迷人的姿态，经典标志帆布DREAMER斜挎包轻倚身侧，让优雅恰到好处。当复古优雅与风格酷范碰撞，穿行于街头，举手投足间都散发着优雅韵味。官网更有超多款单品优惠，前往COACH官网，探寻惊喜！</text>
-  <text class="daily-bottom">TUKA</text>
+  <text class="recommend">{{dailyRecommend.reason}}</text>
+
+  <swiper class="detail-swiper" indicator-dots="true" indicator-active-color="#D03472" previous-margin="50px" next-margin="50px">
+      <swiper-item class="details" wx:for="{{dailyDetailList}}">
+          <image class="detail-image" src="{{item.detailUrl}}"></image>
+          <view class="detail-desc">
+            <text>{{item.name}}</text>
+            <text style="text-decoration:line-through;">原价：{{item.pricePre}}</text>
+            <text>现价：{{item.priceNow}}</text>
+          </view>
+      </swiper-item> 
+  </swiper>
+  <text class="daily-bottom">·TUKA·</text>
 </view>
